@@ -1,6 +1,6 @@
 {
   "name": "req-scopes",
-  "version": "3.4.2",
+  "version": "3.4.3",
   "license": "MIT",
   "description": "A Node.js library designed for efficient server-side extraction of client request data, providing easy access to client information such as IP address, browser type and location",
   "main": "dist/index.js",
