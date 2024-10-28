@@ -40,6 +40,6 @@
     "@maxmind/geoip2-node": "^4.2.0",
     "ip": "^2.0.1",
     "maxmind": "^4.3.17",
-    "req-bans": "^3.3.1"
+    "req-bans": "^3.3.2"
   }
 }
